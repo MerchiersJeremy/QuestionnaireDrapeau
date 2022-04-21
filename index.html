@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/Style.css">
+    <head>
+        <meta charset="utf-8" />
+        <title>Drapeaux</title>
+    <script>
+    function choix()
+        {
+            var choix = région[région.selectedIndex].value;
+            location.href="jeu.html";
+            sessionStorage.setItem("transfert", choix);
+        }
+    </script>
+    </head>
+
+    <body>
+    <header class="headfoot">
+        <h1>Reconnaître les drapeaux du monde</h1>
+    </header>
+    <section id="centre">
+        <h2> Bienvenue dans le jeu de reconnaîssance des drapeaux !</h2>
+        <p>Veuillez choisir la région dans laquelle vous souhaitez jouer</p>
+        <select id="région">
+        <option value ="Amérique-Sud">Amérique du sud</option>
+        <option value ="Europe-Ouest">Europe de l'ouest</option>
+        <option value ="Europe-Est">Europe de l'est</option>
+        <input type="button" onclick="choix()" class="submit" value="Jouer"/>
+        </select>
+    </section>
+    <footer class="headfoot"> Merchiers Jeremy  |   B132   |   48603 </footer>
+    </body>
+</html>
+
